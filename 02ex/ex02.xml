@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MSc>
+    <teaches>
+        <course>Fundamentals of Computing</course>
+        <lecturer>Michael</lecturer>
+    </teaches>
+    <teaches>
+        <course>Programming in Java</course>
+        <lecturer>Sergio</lecturer>
+    </teaches>
+    <teaches>
+        <course>Computer Systems</course>
+        <lecturer>Szabolcs</lecturer>
+    </teaches>
+</MSc>
