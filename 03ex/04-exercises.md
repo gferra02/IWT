@@ -47,15 +47,15 @@ Write an XML DTD for representing information about students on an MSc programme
 
 ```
 <!DOCTYPE programme [
-<!ELEMENT programme (degree, year, results)>
-<!ELEMENT degree (#PCDATA)>
-<!ELEMENT year (#PCDATA)>
-<!ELEMENT results (distinction*, merit*, pass*, fail*)>
-<!ELEMENT distinction (name*)>
-<!ELEMENT merit (name*)>
-<!ELEMENT pass (name*)>
-<!ELEMENT fail (name*)>
-<!ELEMENT name (#PCDATA)*>
+<!ELEMENT programme     (degree, year, results)>
+<!ELEMENT degree        (#PCDATA)>
+<!ELEMENT year          (#PCDATA)>
+<!ELEMENT results       (distinction*, merit*, pass*, fail*)>
+<!ELEMENT distinction   (name*)>
+<!ELEMENT merit         (name*)>
+<!ELEMENT pass          (name*)>
+<!ELEMENT fail          (name*)>
+<!ELEMENT name          (#PCDATA)*>
 ]>
 ```
 
@@ -99,10 +99,10 @@ Consider a relational database containing a relation `teaches` with attributes `
 
 ```
 <!DOCTYPE msc [
-<!ELEMENT msc (teaches)*>
-<!ELEMENT teaches (course, lecturer)*>
-<!ELEMENT course (#PCDATA)*>
-<!ELEMENT lecturer (#PCDATA)*>
+<!ELEMENT msc       (teaches)*>
+<!ELEMENT teaches   (course, lecturer)*>
+<!ELEMENT course    (#PCDATA)*>
+<!ELEMENT lecturer  (#PCDATA)*>
 ]>
 ```
 
