@@ -60,7 +60,7 @@ Write an XML DTD for representing information about students on an MSc programme
 ```
 
 ```
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!DOCTYPE programme SYSTEM "programme.dtd">
 
@@ -107,7 +107,7 @@ Consider a relational database containing a relation `teaches` with attributes `
 ```
 
 ```
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!DOCTYPE teaches SYSTEM "msc.dtd">
 
