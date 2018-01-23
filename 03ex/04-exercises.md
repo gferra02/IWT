@@ -38,7 +38,7 @@ but no others.
 
 #### Content model:
 
-`(day*, month*, year)`
+`((day?, month)?, year)`
 
 ## Part II
 
