@@ -20,6 +20,13 @@ Consider the content models `(zero, one)*` and `(zero | one)*`. Give an example 
 * one, zero ...
 * one, one ...
 
+Example of what is allowed by `(zero | one)*` and not by `(zero, one)*`:
+
+* zero
+* zero, zero
+* one, zero
+* ...
+
 ### Ex 2
 Consider the elements `day`, `month` and `year`. Produce a content model which allows for each of the sequences
 ```
