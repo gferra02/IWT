@@ -40,7 +40,7 @@ but no others.
 
 `((day?, month)?, year)`
 
-**Note:** the use of `?` for allow at most one.
+**Note:** the use of `?` for 'allow at most one'.
 
 ## Part II
 
