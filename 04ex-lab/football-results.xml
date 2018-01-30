@@ -22,9 +22,12 @@ some attributes this time, for practice.
                              redcard*)>
 <!ELEMENT name              (#PCDATA)>
 <!ELEMENT jerseyno          (#PCDATA)>
+<!-- 
 <!ELEMENT goal              (player,
                              (hometeam | awayteam),
                              (penalty | actiongoal))*>
+-->
+<!ELEMENT goal              (player, (penalty | actiongoal))*>
 <!ELEMENT yellowcard        (minute)>
 <!ELEMENT redcard           (minute)>
 <!ELEMENT penalty           (minute)>
@@ -67,7 +70,9 @@ some attributes this time, for practice.
             <player>
                 <name>Pröpper</name>
                 <jerseyno>24</jerseyno>
-                <yellowcard>37</yellowcard>
+                <yellowcard>
+                    <minute>37</minute>
+                </yellowcard>
             </player>
             <player>
                 <name>Izquierdo</name>
@@ -80,7 +85,9 @@ some attributes this time, for practice.
             <player>
                 <name>Murray</name>
                 <jerseyno>17</jerseyno>
-                <yellowcard>24</yellowcard>
+                <yellowcard>
+                    <minute>24</minute>
+                </yellowcard>
             </player>
         </hometeam>
         <awayteam>
@@ -96,7 +103,9 @@ some attributes this time, for practice.
             <player>
                 <name>Francis</name>
                 <jerseyno>2</jerseyno>
-                <yellowcard>18</yellowcard>
+                <yellowcard>
+                    <minute>18</minute>
+                </yellowcard>
             </player>
             <player>
                 <name>S Cook</name>
@@ -133,13 +142,39 @@ some attributes this time, for practice.
         </awayteam>
         <goal>
             <player>
+                <name>Knockaert</name>
+                <jerseyno>11</jerseyno>
             </player>
+            <actiongoal>
+                <minute>5</minute>
+            </actiongoal>
         </goal>
         <goal>
+            <player>
+                <name>S Cook</name>
+                <jerseyno>3</jerseyno>
+            </player>
+            <actiongoal>
+                <minute>33</minute>
+            </actiongoal>
         </goal>
         <goal>
+            <player>
+                <name>Murray</name>
+                <jerseyno>17</jerseyno>
+            </player>
+            <actiongoal>
+                <minute>44</minute>
+            </actiongoal>
         </goal>
         <goal>
+            <player>
+                <name>Wilson</name>
+                <jerseyno>13</jerseyno>
+            </player>
+            <actiongoal>
+                <minute>79</minute>
+            </actiongoal>
         </goal>
     </game>
 </footballresults>
