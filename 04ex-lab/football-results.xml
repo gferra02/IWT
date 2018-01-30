@@ -11,36 +11,135 @@ which players were shown yellow or red cards. You might use
 some attributes this time, for practice.
 -->
 
-<!DOCTYPE football-results [
-<!ELEMENT football-results  (game)*>
-<!ELEMENT game              (home-team, away-team, goal*)>
-<!ELEMENT home-team         (player+)>
-<!ELEMENT away-team         (player+)>
+<!DOCTYPE footballresults [
+<!ELEMENT footballresults   (game)*>
+<!ELEMENT game              (hometeam, awayteam, goal*)>
+<!ELEMENT hometeam          (name, player+)>
+<!ELEMENT awayteam          (name, player+)>
 <!ELEMENT player            (name,
-                             jersey-no,
-                             yellow-card*,
-                             red-card*)>
+                             jerseyno,
+                             yellowcard*,
+                             redcard*)>
 <!ELEMENT name              (#PCDATA)>
-<!ELEMENT jersey-no         (#PCDATA)>
+<!ELEMENT jerseyno          (#PCDATA)>
 <!ELEMENT goal              (player,
-                             (home-team | away-team),
-                             (penalty | action-goal))*>
-<!ELEMENT yellow-card       (player, minute)>
-<!ELEMENT red-card          (player, minute)>
+                             (hometeam | awayteam),
+                             (penalty | actiongoal))*>
+<!ELEMENT yellowcard        (minute)>
+<!ELEMENT redcard           (minute)>
 <!ELEMENT penalty           (minute)>
-<!ELEMENT action-goal       (minute)>
+<!ELEMENT actiongoal        (minute)>
 <!ELEMENT minute            (#PCDATA)>
 ]>
 
-<football-results>
+<footballresults>
     <game>
-        <home-team>
+        <hometeam>
+            <name>Brighton &#38; Hove Albion</name>
             <player>
-                <name></name>
-                <jersey-no></jersey-no>
-                <goal>
-        </home-team>
-        <away-team>
-        </away-team>
+                <name>Ryan</name>
+                <jerseyno>1</jerseyno>
+            </player>
+            <player>
+                <name>Schelotto</name>
+                <jerseyno>21</jerseyno>
+            </player>
+            <player>
+                <name>Duffy</name>
+                <jerseyno>22</jerseyno>
+            </player>
+            <player>
+                <name>Dunk</name>
+                <jerseyno>5</jerseyno>
+            </player>
+            <player>
+                <name>Suttner</name>
+                <jerseyno>29</jerseyno>
+            </player>
+            <player>
+                <name>Knockaert</name>
+                <jerseyno>11</jerseyno>
+            </player>
+            <player>
+                <name>Stephens</name>
+                <jerseyno>6</jerseyno>
+            </player>
+            <player>
+                <name>Pröpper</name>
+                <jerseyno>24</jerseyno>
+                <yellowcard>37</yellowcard>
+            </player>
+            <player>
+                <name>Izquierdo</name>
+                <jerseyno>19</jerseyno>
+            </player>
+            <player>
+                <name>Groß</name>
+                <jerseyno>13</jerseyno>
+            </player>
+            <player>
+                <name>Murray</name>
+                <jerseyno>17</jerseyno>
+                <yellowcard>24</yellowcard>
+            </player>
+        </hometeam>
+        <awayteam>
+            <name>AFC Bournemouth</name>
+            <player>
+                <name>Begovic</name>
+                <jerseyno>27</jerseyno>
+            </player>
+            <player>
+                <name>A Smith</name>
+                <jerseyno>15</jerseyno>
+            </player>
+            <player>
+                <name>Francis</name>
+                <jerseyno>2</jerseyno>
+                <yellowcard>18</yellowcard>
+            </player>
+            <player>
+                <name>S Cook</name>
+                <jerseyno>3</jerseyno>
+            </player>
+            <player>
+                <name>Daniels</name>
+                <jerseyno>11</jerseyno>
+            </player>
+            <player>
+                <name>Ibe</name>
+                <jerseyno>33</jerseyno>
+            </player>
+            <player>
+                <name>L Cook</name>
+                <jerseyno>16</jerseyno>
+            </player>
+            <player>
+                <name>Arter</name>
+                <jerseyno>8</jerseyno>
+            </player>
+            <player>
+                <name>Pugh</name>
+                <jerseyno>7</jerseyno>
+            </player>
+            <player>
+                <name>Afobe</name>
+                <jerseyno>9</jerseyno>
+            </player>
+            <player>
+                <name>Wilson</name>
+                <jerseyno>13</jerseyno>
+            </player>
+        </awayteam>
+        <goal>
+            <player>
+            </player>
+        </goal>
+        <goal>
+        </goal>
+        <goal>
+        </goal>
+        <goal>
+        </goal>
     </game>
-</football-results>
+</footballresults>
