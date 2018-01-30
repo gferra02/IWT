@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Consider an application in which the results of football games are
+to be represented in XML. (The description below is deliberately
+more open-ended than the one above.) For each game, we want
+to be able to represent the two teams involved, which one was
+playing at home, which players scored goals (some of which may
+have been penalties) and the time when each was scored, and
+which players were shown yellow or red cards. You might use
+some attributes this time, for practice.
+-->
+
+<!DOCTYPE football-results [
+<!ELEMENT football-results  (game)*>
+<!ELEMENT game              (home-team, away-team, goal*)>
+<!ELEMENT home-team         (player+)>
+<!ELEMENT away-team         (player+)>
+<!ELEMENT player            (name,
+                             jersey-no,
+                             yellow-card*,
+                             red-card*)>
+<!ELEMENT name              (#PCDATA)>
+<!ELEMENT jersey-no         (#PCDATA)>
+<!ELEMENT goal              (player,
+                             (home-team | away-team),
+                             (penalty | action-goal))*>
+<!ELEMENT yellow-card       (player, minute)>
+<!ELEMENT red-card          (player, minute)>
+<!ELEMENT penalty           (minute)>
+<!ELEMENT action-goal       (minute)>
+<!ELEMENT minute            (#PCDATA)>
+]>
+
+<football-results>
+    <game>
+        <home-team>
+            <player>
+                <name></name>
+                <jersey-no></jersey-no>
+                <goal>
+        </home-team>
+        <away-team>
+        </away-team>
+    </game>
+</football-results>
