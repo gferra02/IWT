@@ -13,6 +13,6 @@
     </xsl:template>
 
     <xsl:template match="contents/article">
-        <p><xsl:value-of select="title"/></p>
+        <p>"<xsl:value-of select="title"/>"</p>
     </xsl:template>
 </xsl:stylesheet>
