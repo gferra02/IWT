@@ -13,11 +13,7 @@
     </xsl:template>
 
     <xsl:template match="contents/article">
-        <p>
-            <xsl:for-each select="author">
-                <xsl:value-of select="../author"/>, 
-            </xsl:for-each>
-        </p>
+        <p><xsl:value-of select="author"/>, </p>
         <p><em>"<xsl:value-of select="title"/>"</em>, pp. <xsl:value-of select="pages"/>.</p>
         <hr/>
     </xsl:template>
