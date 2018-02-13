@@ -19,5 +19,6 @@
             </xsl:for-each>
         </p>
         <p><em>"<xsl:value-of select="title"/>"</em>, pp. <xsl:value-of select="pages"/>.</p>
+        <hr/>
     </xsl:template>
 </xsl:stylesheet>
