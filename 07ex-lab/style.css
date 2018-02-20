@@ -1,0 +1,11 @@
+/** IWT Week 7 - Lab exercises **/ 
+
+body {
+    background: #ff7700; /* test */
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+h1,
+h2 {
+    border-bottom: 1px solid #ccc;
+}
